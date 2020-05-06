@@ -2,34 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import ken_doggo from "../assets/ken_doggo.svg"
 
-
- handleSubmit = event => {
-    var firebase = require("firebase/app");
-
-    // Image file references
-    var ref = firebase.storage().ref();
-
-    // Please replace with the image selector id
-    var file = document.querySelector('#image') 
-    
-    var metadata = {
-    contentType: file.type
-    };
-        var task = ref.child(file).put(file, metadata);
-    task
-    .then(snapshot => snapshot.ref.getDownloadURL())
-    .then((url) => {
-        console.log(url);
-        document.querySelector('#ImageHTMLid').src = url;   // Grabbing the image url and assigning it to an html element
-    })
-        .catch(console.error);
-  }
-
-
 export default () => (
     <div class=" flex w-full h-screen text-center items-center">
         <Layout>
-            <div class="px-8">
+            /*<div class="px-8">
                 <div class="flex justify-center">
                     <img class="justify-center" alt='Ken Doggo' width="300rem" src={ken_doggo} />
                 </div>
@@ -44,9 +20,9 @@ export default () => (
                 <div class="flex justify-center align-center py-8">
                     <h1 class="font-semibold text-center text-xl md:text-2xl leading-tight text-doggobrown">under development</h1>
                 </div>
-            </div>
+            </div>*/
 {
-            <form class="px-6 py-4" onSubmit={this.handleSubmit}>
+            <form class="px-6 py-4">
                 <div class="bg-gray-100 py-4">
                     <div>
                         <div></div>
