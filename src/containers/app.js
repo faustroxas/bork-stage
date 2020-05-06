@@ -21,7 +21,7 @@ export default () => (
                     <h1 class="font-semibold text-center text-xl md:text-2xl leading-tight text-doggobrown">under development</h1>
                 </div>
             </div>
-{/* 
+{
             <form class="px-6 py-4">
                 <div class="bg-gray-100 py-4">
                     <div>
@@ -61,7 +61,7 @@ export default () => (
                     </div>
                 </div>
             </form>
-*/}
+}
         </Layout>
     </div>
 )
